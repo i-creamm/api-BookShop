@@ -11,9 +11,9 @@
 - Validation: Hibernate Validator (JSR 380)
 
 # 🛠️ Các tính năng chính
--[x] Quản lý sản phẩm: Thêm, sửa, xóa, tìm kiếm sản phẩm.
--[x] Validation: Kiểm tra dữ liệu đầu vào chặt chẽ
--[x] Xử lý lỗi tập trung: Sử dụng @RestControllerAdvice để trả về định dạng lỗi nhất quán.
+- Quản lý sản phẩm: Thêm, sửa, xóa, tìm kiếm sản phẩm.
+- Validation: Kiểm tra dữ liệu đầu vào chặt chẽ
+- Xử lý lỗi tập trung: Sử dụng @RestControllerAdvice để trả về định dạng lỗi nhất quán.
 
 ```text
 src/main/java/ecom/
