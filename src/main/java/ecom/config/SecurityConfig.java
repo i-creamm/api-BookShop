@@ -55,11 +55,12 @@ public class SecurityConfig {
                         .requestMatchers("/api/products",
                                 "/api/products/category/**",
                                 "/api/products/{id}",
+                                "/api/products/status/{id}",
                                 "/api/products/latest",
-                                "/api/products/bestseller").permitAll()
+                                "/api/products/bestseller",
+                                "/api/categories").permitAll()
                         .requestMatchers("/api/auth/**").permitAll()
-                        .requestMatchers("/api/categories").authenticated()
-                        .anyRequest().authenticated()
+//                        .anyRequest().authenticated()
                 )
 
                 .addFilterBefore(jwtAuthenticationFilter,

@@ -40,7 +40,7 @@ public class CategoryController {
         return new ResponseEntity<>(savCategory, HttpStatus.CREATED);
     }
     
-    @PatchMapping("{id}/status")
+    @PatchMapping("status/{id}")
     public ResponseEntity<Category> changeStatus(@PathVariable long id) {        
         return ResponseEntity.ok(categoryService.toggleStatus(id));
     }

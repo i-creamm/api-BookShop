@@ -2,6 +2,7 @@ package ecom.service;
 
 import java.util.List;
 
+import ecom.dto.ProductDTO;
 import ecom.entity.Product;
 
 public interface ProductService {
@@ -16,5 +17,11 @@ public interface ProductService {
 
     List<Product> findProductBestseller();
 
-    void save (Product product);
+    Product saveProduct (ProductDTO productDTO);
+
+    Product updateProduct (long id, ProductDTO productDTO);
+
+    Product toggleStatus (long id);
+
+    void deleteProduct (long id);
 }

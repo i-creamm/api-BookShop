@@ -23,6 +23,8 @@ public interface ProductRepository extends JpaRepository<Product, Long>  {
 
     List<Product> findByStatusTrueOrderBySoldDesc();
 
+    boolean existsByName(String name);
+
     List<Product> findByStatusTrueOrderByQuantityDesc();
 
 }

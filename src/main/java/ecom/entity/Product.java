@@ -30,10 +30,12 @@ public class Product {
 	private String image;
 	private String description;
 	private LocalDate enteredDate;
-	private Boolean status;
+	private boolean status;
 	private int sold;
 
 	@ManyToOne
 	@JoinColumn(name = "category_id")
 	private Category category;
 }
+
+//sold enteredDate
