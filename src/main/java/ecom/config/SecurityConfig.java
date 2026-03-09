@@ -58,7 +58,8 @@ public class SecurityConfig {
                                 "/api/products/status/{id}",
                                 "/api/products/latest",
                                 "/api/products/bestseller",
-                                "/api/categories").permitAll()
+                                "/api/categories",
+                                "/api/cart/user/{email}").permitAll()
                         .requestMatchers("/api/auth/**").permitAll()
 //                        .anyRequest().authenticated()
                 )
